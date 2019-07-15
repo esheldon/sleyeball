@@ -1,0 +1,16 @@
+#!/usr/bin/env python
+
+import argparse
+import sleyeball
+
+
+parser = argparse.ArgumentParser()
+parser.add_argument('tilename')
+
+def main():
+    args = parser.parse_args()
+
+    sleyeball.make_stamps(args.tilename)
+
+if __name__ == '__main__':
+    main()

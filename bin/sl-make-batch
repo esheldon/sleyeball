@@ -1,0 +1,10 @@
+#!/usr/bin/env python
+import sleyeball
+
+
+def main():
+    sleyeball.make_batch()
+
+
+if __name__ == '__main__':
+    main()
