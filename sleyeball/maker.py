@@ -67,6 +67,8 @@ def make_stamps(tilename, resize_factor=4, stamp_size=96):
 
             number = cat['number'][icat]
             jpgname = files.get_stamp_file(tilename, number)
+            d = files.get_stamp_dir(tilename)
+            eu.ostools.makedirs_fromfile(d)
 
             print('writing %d/%d  %s (%d, %d)' % \
                 (i+1, w.size, jpgname, enx, eny))

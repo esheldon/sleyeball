@@ -15,12 +15,35 @@ def get_cand_dir():
     return os.path.join(get_base_dir(), 'candidates')
 
 
-def get_cand_file():
+def get_cand_file_orig():
     """
     holds paths to coadds
     """
     d = get_cand_dir()
     return os.path.join(d, 'z4ErinSheldon.fits')
+
+
+def get_cand_file():
+    """
+    holds paths to coadds
+    """
+    d = get_cand_dir()
+    return os.path.join(d, 'z4ErinSheldon-clean.fits')
+
+
+def get_badreg_dir():
+    """
+    we keep lists here
+    """
+    return os.path.join(get_base_dir(), 'badregions')
+
+
+def get_badreg_file():
+    """
+    holds paths to coadds
+    """
+    d = get_badreg_dir()
+    return os.path.join(d, 'y3a2_foreground_mask_v2.1.fits.gz')
 
 
 def get_stamp_dir(tilename):
